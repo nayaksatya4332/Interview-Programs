@@ -1,0 +1,6 @@
+				SUBARRAY	SUBSTRING	SUBSEQUENCE		SUBSETS
+===========================================================================
+CONTIGUIUS	||	YES			YES			NO				NO
+
+ORDER		||	YES			YES			YES				NO
+	
