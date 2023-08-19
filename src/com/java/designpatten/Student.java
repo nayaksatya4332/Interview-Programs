@@ -1,4 +1,4 @@
-package com.satya.designpatten;
+package com.java.designpatten;
 
 import java.time.LocalDate;
 
