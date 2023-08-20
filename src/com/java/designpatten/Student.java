@@ -10,39 +10,39 @@ public class Student {
 	private LocalDate dob;
 
 	static class StudentBuilder {
-		private int _id;
-		private String _name;
-		private int _age;
-		private String _state;
-		private LocalDate _dob;
+		private int id;
+		private String name;
+		private int age;
+		private String state;
+		private LocalDate dob;
 
 		StudentBuilder id(int id) {
-			this._id = id;
+			this.id = id;
 			return this;
 		}
 
 		StudentBuilder name(String name) {
-			this._name = name;
+			this.name = name;
 			return this;
 		}
 
 		StudentBuilder age(int age) {
-			this._age = age;
+			this.age = age;
 			return this;
 		}
 
 		StudentBuilder state(String state) {
-			this._state = state;
+			this.state = state;
 			return this;
 		}
 
 		StudentBuilder dob(LocalDate dob) {
-			this._dob = dob;
+			this.dob = dob;
 			return this;
 		}
 
 		Student build() {
-			return new Student(_id, _name, _age, _state, _dob);
+			return new Student(id, name, age, state, dob);
 		}
 
 	}
@@ -57,6 +57,46 @@ public class Student {
 		this.name = name;
 		this.age = age;
 		this.state = state;
+		this.dob = dob;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public LocalDate getDob() {
+		return dob;
+	}
+
+	public void setDob(LocalDate dob) {
 		this.dob = dob;
 	}
 
