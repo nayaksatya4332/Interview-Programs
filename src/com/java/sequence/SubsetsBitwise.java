@@ -2,7 +2,7 @@ package com.java.sequence;
 
 public class SubsetsBitwise {
 	public static void main(String[] args) {
-		char[] arr = { 'a', 'b', 'c', 'd' };
+		char[] arr = { 'a', 'b', 'c'};
 		int n = arr.length;
 		for (int i = 0; i < (1 << n); i++) {
 			System.out.print("{ ");

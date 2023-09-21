@@ -15,6 +15,7 @@ public class Main {
 	 * AM/PM marker ========================
 	 */
 	public static void main(String[] args) {
+//		System.out.println(LocalDate.now().plusDays(1).getDayOfYear());
 		DateToStringToDate converter = new DateToStringToDate();
 		
 		LocalDate d1 = LocalDate.of(2023, 2, 25);
@@ -34,15 +35,16 @@ public class Main {
 		LocalDate ldate1 = converter.convertStringToLocalDate(ld1, format2);
 		LocalDateTime ldTime1 = converter.convertStringToLocalDateTime(ldt2, format3);
 		
+		
 		ZoneId zId = ZoneId.of("Asia/Kolkata");
 		ZonedDateTime zonedDateTime = dt1.atZone(zId);
 		System.out.println(zonedDateTime);
-//		Main.listAllZones();
+		Main.listAllZones();
 	}
 
 	public static void listAllZones() {
 		Set<String> allZoneIds = ZoneId.getAvailableZoneIds();
-
+		
 		// Print all time zone IDs
 		for (String zoneId : allZoneIds) {
 			System.out.println(zoneId);
